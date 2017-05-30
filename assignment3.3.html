@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User Information Form</title>
+
+		<meta charset="utf-8">
+
+		<style>
+			/*styles the main container of the document*/
+			.mainContainer {
+				margin  		  : 0 auto;
+				width 			  : 650px;
+				height 		      : 950px;
+				background-color  : #89ace5;
+			}
+			/*styles all the h3 elements*/
+			h3 {
+				margin            :0 70px;
+			}
+			/*Styles all the paragraph*/
+			p{
+				border            : 1px solid white;
+				width             : 470px;
+				padding           : 10px 20px;
+				margin-left       : 70px;
+				border-radius     : 5px;
+				background-color  : #c7dbfc;
+			}
+			/* styles the input field of 1st form*/
+			.form1 input {
+				margin-left       : 72px;
+				padding           : 5px 20px;
+			}
+			/* styles the input field and textarea of 2nd form*/
+			.form2 input , textarea{
+				margin-left       : 50px;
+				padding           : 5px 20px;
+			}
+			/*Styles the input field of 3rd form*/
+			.form3 input {
+				margin-left       : 30px;
+				padding           : 5px 20px;
+			}
+			/*Styling to the button*/
+			button {
+				border-radius     : 10px; 
+				background-color  : #153a77; 
+				margin            : 0 auto;
+				width             : 70px;
+				height            : 30px;
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<div class="mainContainer">
+				<!--The below form displays the details of user's name,email and phone+ -->
+				<h3 style="padding-top: 30px">Step 1: Your details</h3>
+				<form class="form1">
+					<p>
+						<label for="userName">Name</label>
+						<input type="text" name="uName" id="userName" placeholder="First and last name">
+					</p>
+					<p>
+						<label for="eMail">Email</label>
+						<input type="email" name="mail" id="eMail" placeholder="example@domain.com">
+					</p>
+					<p>
+						<label for="phoneNumber">Phone</label>
+						<input type="number" name="pNumber" id="phoneNumber" placeholder="ex. +919400000000">
+					</p>
+				</form> 
+
+				<!--Displays the user's address -->
+				<h3>Step 1: Delivery address</h3>
+				<form class="form2">
+					<p>
+						<label for="address">Address</label>
+						<textarea id="address" rows="" cols="" style="margin-left:62px"></textarea>
+					</p>
+					<p>
+						<label for="postcode">Post Code</label>
+						<input type="text" name="postalCode" id="postcode">
+					</p>
+					<p>
+						<label for="country">Country</label>
+						<input type="text" name="countryName" id="country" style="margin-left: 64px">
+					</p>
+				</form>
+
+				<!--displays the crad details related to the user -->
+				<h3>Step 1 : Card Details</h3>
+				<form class="form3">
+					<p>
+						<label>Card Type</label><br>
+						<input type="radio" name="cardType" value="visa" id="rVisa">
+
+						<label for="rVisa"><img src="https://cdn4.iconfinder.com/data/icons/speckyboy_payment_method_icons/512/visa.png" style="width:50px;height: 50px;">VISA</label>
+						<input type="radio" name="cardType" value="AmEx" id="rAmEx">
+
+						<label id="rAmEx"><img src="https://img.clipartfest.com/74bd1529eebd3b2f6cd56efced0acdd5_american-express-by-monolite-clipart-american-express-logo_800-800.png" style="width:50px;height: 50px;">AmEx</label>
+						<input type="radio" name="cardType" value="Mastercard" id="rMastercard">
+						<label id="rMastercard"><img src="https://vignette4.wikia.nocookie.net/creditcards/images/6/65/Brand.gif/revision/latest?cb=20140915223724" style="width:50px;height: 50px;">MasterCard</label>
+					</p>
+					<p>
+						<label for="cardNumber">Card Number</label>
+						<input type="text" name="cNumber" id="cardNumber">
+					</p>
+					<p>
+						<label for="securityCode">Security Code</label>
+						<input type="text" name="sCode" id="securityCode">
+					</p>
+					<p>
+						<label for="cardName">Name on card</label>
+						<input type="text" name="cName" id="cardName" placeholder="exact name on card">
+					</p>
+
+					<center><button>BUY IT!</button></center>
+				</form>
+		</div>
+	</body>
+</html>
